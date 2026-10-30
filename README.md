@@ -5,6 +5,9 @@
 ##Resources
 
 [Pharo MOC](https://mooc.pharo.org/)
+
 [Sletz's FAUST step-by-step turorial](https://sletz.github.io/faust-tutorial/index.html)
+
 [Pharo by Example 9](https://books.pharo.org/pharo-by-example9/)
+
 [Professor Ge Wan on Artful Design](https://www.youtube.com/watch?v=413qyNDmBxg)
