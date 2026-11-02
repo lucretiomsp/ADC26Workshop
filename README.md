@@ -29,5 +29,18 @@ dsp displayUI.
 
 "when you are done"
 dsp stop; destroy.
+
+"lets rewrite the effect but we without sending the input: message so by default it uses external inputs"
+chain :=( GreyHole new mergeWith: PhTranspose  new) => PhBitCrusher  new.
+dsp := (DryWetMonoMixer new fx: chain) stereo asDsp.
+
+dsp init.
+"now we export it with a generic editor"
+dsp export2JuceWithName: 'TempestaGeneric' type: PhEffectPluginType new.
+```
+
+now open a terminal, get inside the folder created by the exporter and execute:
+```bash
+cmake -P build.cmake
 ```
 
