@@ -2,7 +2,7 @@
 
 [Artful Design](https://artful.design/) is a design practice in search of the sublime, where form follows function and aesthetics is coupled with ethics. It is design that is expressive, socially meaningful, and humanistic. But designing audio plugins usually means fighting with C++ before you ever hear a sound. This workshop flips that order. Using [Phausto](https://github.com/lucretiomsp/phausto), a DSP DSL inside the live [Pharo](https://pharo.org/) environment, you will prototype an artful multieffect, with no C++ for the audio engine. Phausto's [JUCE](https://juce.com/) exporter then hands you a complete project: Projucer and CMake files, the processor and editor definitions and implementations, and the glue code that ties them together. The only C++ you write is the UI, which you will sketch quickly in Bloc and p5.js and translate into JUCE components with help from an LLM. By the end you will have built, assembled, and tested a working plugin in your own DAW, and seen how an accessible workflow leaves more room for design that has character. And you will have learnt how to design sound, graphics, and interaction together for play and delight.
 
-##Resources
+## Resources
 
 [Pharo MOC](https://mooc.pharo.org/)
 
@@ -11,3 +11,23 @@
 [Pharo by Example 9](https://books.pharo.org/pharo-by-example9/)
 
 [Professor Ge Wan on Artful Design](https://www.youtube.com/watch?v=413qyNDmBxg)
+
+## Start Your Engine
+```smalltalk
+"Lets hear the effect chain on a loop player"
+path := TurboPhausto turboSamplesFolder , '/breaks'  .
+loop := PhLoopSpeedLevel new pathToFolder: path.
+
+chain :=( GreyHole new mergeWith: PhTranspose  new) => PhBitCrusher  new.
+
+dsp := (DryWetMonoMixer new fx: chain; input: loop) stereo asDsp.
+
+dsp := (loop => GreyHole new) stereo asDsp.
+dsp init.
+dsp start.
+dsp displayUI.
+
+"when you are done"
+dsp stop; destroy.
+```
+
