@@ -12,6 +12,17 @@
 
 [Professor Ge Wan on Artful Design](https://www.youtube.com/watch?v=413qyNDmBxg)
 
+## Download the Pharo Music Image
+The **Pharo Music** image is a ready-made Pharo image with Phausto and its native
+libraries already in place. To install it, first download the [Pharo Launcher](https://pharo.org/download), then:
+
+1. Click **New** → select category **Pharo-Music distributions**
+2. Choose **Pharo Music (demo)** from the template list
+3. Click **Create image**
+4. Double-click the new image to launch it
+
+![Pharo Launcher – selecting Pharo Music (beta)](/musicwithpharo/assets/img/musicImgLaunchTemp.png){: .launcher-screenshot }
+
 ## Start Your Engine
 ```smalltalk
 "Lets hear the effect chain on a loop player"
