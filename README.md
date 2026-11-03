@@ -39,6 +39,12 @@ dsp init.
 dsp export2JuceWithName: 'TempestaGeneric' type: PhEffectPluginType new.
 ```
 
+To build your plugin, you need Cmake. You can check if it. is installed on your system by executing
+```bash
+cmake --version
+```
+If you need to install it, follow [these instructions](https://github.com/lucretiomsp/ADC26Workshop/wiki/Installing-CMake)
+
 now open a terminal, get inside the folder created by the exporter and execute:
 ```bash
 cmake -P build.cmake
