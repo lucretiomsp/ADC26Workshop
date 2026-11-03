@@ -6,13 +6,13 @@
 
 [Workshop slides](/resorces/AcccesiblePluginDesignWithPhaustoAndJUCE.pdf)
 
-[Pharo MOC](https://mooc.pharo.org/)
+[Pharo MOOC](https://mooc.pharo.org/)
 
-[Sletz's FAUST step-by-step turorial](https://sletz.github.io/faust-tutorial/index.html)
+[Sletz's FAUST step-by-step tutorial](https://sletz.github.io/faust-tutorial/index.html)
 
 [Pharo by Example 9](https://books.pharo.org/pharo-by-example9/)
 
-[Professor Ge Wan on Artful Design](https://www.youtube.com/watch?v=413qyNDmBxg)
+[Professor Ge Wang on Artful Design](https://www.youtube.com/watch?v=413qyNDmBxg)
 
 ## Download the Pharo Music Image
 The **Pharo Music** image is a ready-made Pharo image with Phausto and its native
@@ -43,7 +43,7 @@ dsp displayUI.
 "when you are done"
 dsp stop; destroy.
 
-"lets rewrite the effect but we without sending the input: message so by default it uses external inputs"
+"lets rewrite the effect but  without sending the input: message so by default it uses external inputs"
 chain :=( GreyHole new mergeWith: PhTranspose  new) => PhBitCrusher  new.
 dsp := (DryWetMonoMixer new fx: chain) stereo asDsp.
 
@@ -52,7 +52,7 @@ dsp init.
 dsp export2JuceWithName: 'TempestaGeneric' type: PhEffectPluginType new.
 ```
 
-To build your plugin, you need Cmake. You can check if it. is installed on your system by executing
+To build your plugin, you need Cmake. You can check if it is installed on your system by executing
 ```bash
 cmake --version
 ```
