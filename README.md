@@ -21,7 +21,7 @@ libraries already in place. To install it, first download the [Pharo Launcher](h
 3. Click **Create image**
 4. Double-click the new image to launch it
 
-![Pharo Launcher – selecting Pharo Music (beta)](/resources/musicImgLaunchTemp.png){: .launcher-screenshot }
+![Pharo Launcher – selecting Pharo Music (beta)](/resources/musicImgLaunchTemp.png){: .launcher-screenshot width="50%" }
 
 ## Start Your Engine
 ```smalltalk
