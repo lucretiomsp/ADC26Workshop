@@ -4,7 +4,7 @@
 
 ## Resources
 
-[Workshop slides](/resorces/AcccesiblePluginDesignWithPhaustoAndJUCE.pdf)
+Download the workshop slides in PDF [here](/resources/AccesiblePluginDesignWithPhaustoAndJUCE.pdf)
 
 [Pharo MOOC](https://mooc.pharo.org/)
 
