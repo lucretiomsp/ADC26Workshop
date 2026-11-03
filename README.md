@@ -4,6 +4,8 @@
 
 ## Resources
 
+[Workshop slides](/resorces/AcccesiblePluginDesignWithPhaustoAndJUCE.pdf)
+
 [Pharo MOC](https://mooc.pharo.org/)
 
 [Sletz's FAUST step-by-step turorial](https://sletz.github.io/faust-tutorial/index.html)
@@ -21,7 +23,7 @@ libraries already in place. To install it, first download the [Pharo Launcher](h
 3. Click **Create image**
 4. Double-click the new image to launch it
 
-![Pharo Launcher – selecting Pharo Music (beta)](/resources/musicImgLaunchTemp.png){: .launcher-screenshot width="50%" }
+<img src="/resources/musicImgLaunchTemp.png" alt="Pharo Launcher – selecting Pharo Music (beta)" width="50%">
 
 ## Start Your Engine
 ```smalltalk
