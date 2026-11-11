@@ -50,6 +50,9 @@ dsp := (DryWetMonoMixer new fx: chain) stereo asDsp.
 dsp init.
 "now we export it with a generic editor"
 dsp export2JuceWithName: 'TempestaGeneric' type: PhEffectPluginType new.
+
+or if you want to export without generic editor attached
+dsp export2JuceWithName: 'TempestaGeneric' type: PhEffectPluginType new editor: PhExportEditor skeleton.
 ```
 
 To build your plugin, you need Cmake. You can check if it is installed on your system by executing
